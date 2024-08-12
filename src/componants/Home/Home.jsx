@@ -1,24 +1,32 @@
 /* eslint-disable react/no-unknown-property */
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import Environement from "../Render/Environment/Environement";
-import CameraSettings from "../Render/Camera/CameraSettings";
 import styles from "./Home.module.scss";
 
 export function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.home}>
-        <Canvas>
-          <OrbitControls />
-          <Environement />
-          <CameraSettings />
+      <div className={styles.converture}>
+        <img src="/assets/img/couverture.png" alt="couverture" />
+      </div>
 
-          <mesh position={[0, 0, 0]}>
-            <boxGeometry args={[1, 1, 1]} />
-            <meshStandardMaterial color="orange" />
-          </mesh>
-        </Canvas>
+      <div className={styles.container__albums}>
+        <a href="#" className={styles.albums}>
+          <img src="/assets/img/album_bali.png" alt="" />
+        </a>
+        <a href="#" className={styles.albums}>
+          <img src="/assets/img/album_paris.png" alt="" />
+        </a>
+        <a href="#" className={styles.albums}>
+          <img src="/assets/img/album_cars.png" alt="" />
+        </a>
+        <a href="#" className={styles.albums}>
+          <img src="/assets/img/album_ile_maurice.png" alt="" />
+        </a>
+        <a href="#" className={styles.albums}>
+          <img src="/assets/img/album_tipsy.png" alt="" />
+        </a>
+        <a href="#" className={styles.albums}>
+          <img src="/assets/img/album_architectural.png" alt="" />
+        </a>
       </div>
     </div>
   );

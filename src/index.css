@@ -1,17 +1,30 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+/* import font pragmatica  */
+
+@font-face {
+  font-family: "Pragmatica";
+  src: url("/assets/font/fonnts.com-Pragmatica_Ext_Extra_Bold.otf")
+    format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Pragmatica";
+  src: url("/assets/font/fonnts.com-Pragmatica_Ext_Extra_Light.otf")
+    format("opentype");
+  font-weight: 200;
+}
+
 :root {
   --white: #f3f3f3;
   --black: #111111;
-  --color-1: #86bfe0;
-  --font: "Poppins", sans-serif;
+  --font: "Pragmatica", sans-serif;
 }
 
 * {
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   position: relative;
   min-width: 0;
   margin: 0;
   padding: 0;
-  font-family: var(--font);
+  font-family: "Pragmatica", sans-serif;
 }
